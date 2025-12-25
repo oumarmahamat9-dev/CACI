@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CACI - Prestataire de Services Industriels en Afrique Centrale</title>
+    <meta name="description" content="CACI: Solutions intégrées pour les secteurs minier, énergétique, oil & gas, chimie et pétrochimie en Afrique Centrale">
+    <meta property="og:title" content="CACI">
+    <meta property="og:description" content="Votre partenaire industriel en Afrique Centrale">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #1a4d5c;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #32b8c6;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1581092495284-8dc10d722f84?w=1200') center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #32b8c6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #2a9aaa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 80px 20px;
+        }
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #1a4d5c;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: #32b8c6;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .about-section {
+            background-color: #f9f9f9;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #1a4d5c;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">CACI</div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#secteurs">Secteurs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <h1>Votre partenaire industriel en Afrique Centrale</h1>
+        <p>Solutions intégrées pour les secteurs minier, énergétique, oil & gas, chimie et pétrochimie</p>
+        <button class="btn" onclick="document.getElementById('apropos').scrollIntoView({behavior:'smooth'})">En savoir plus</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos">
+        <div class="container">
+            <h2>À propos de CACI</h2>
+            <div class="about-section">
+                <div>
+                    <h3>Central Africa Covered Industrially</h3>
+                    <p>Fondée en 2025 et basée à N'Djamena, Tchad, CACI est une entreprise prestataire de services intégrés spécialisée dans les secteurs minier, énergétique, oil & gas, chimie et pétrochimie en Afrique Centrale.</p>
+                    <p style="margin-top: 15px;">Nous accompagnons les projets 360° avec expertise technique et un focus sur le développement local et la durabilité.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500" alt="Industries">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🔧 Ingénierie</h3>
+                    <p>Conception, planification et supervision de projets industriels, garantissant des solutions innovantes et efficaces.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📦 Logistique</h3>
+                    <p>Gestion complète de la chaîne d'approvisionnement, transport et stockage de matériaux et équipements industriels.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔨 Maintenance</h3>
+                    <p>Services de maintenance préventive et corrective pour assurer la performance et la durabilité de vos installations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🌍 Études Environnementales</h3>
+                    <p>Évaluations d'impact environnemental, plans de gestion et conformité réglementaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section id="secteurs">
+        <div class="container">
+            <h2>Secteurs d'Activité</h2>
+            <p style="font-size: 18px; margin-bottom: 30px;">CACI intervient dans divers secteurs clés en Afrique Centrale :</p>
+            <ul style="list-style: none; font-size: 18px; line-height: 2;">
+                <li>✓ Secteur Minier</li>
+                <li>✓ Secteur Énergétique</li>
+                <li>✓ Oil & Gas</li>
+                <li>✓ Chimie et Pétrochimie</li>
+                <li>✓ Eau et Assainissement</li>
+                <li>✓ Agro-industrie</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div style="max-width: 600px; margin: 40px auto;">
+                <form onsubmit="handleSubmit(event)" style="display: grid; gap: 20px;">
+                    <input type="text" placeholder="Votre Nom" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    <input type="email" placeholder="Votre Email" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    <textarea placeholder="Votre Message" rows="5" required style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: Arial;"></textarea>
+                    <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Envoyer le message</button>
+                </form>
+                <div style="margin-top: 40px; text-align: center;">
+                    <h3>Localisation</h3>
+                    <p><strong>N'Djamena, Tchad</strong></p>
+                    <p>Téléphone: +235 [À COMPLÉTER]</p>
+                    <p>Email: contact@caci-africa.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CACI (Central Africa Covered Industrially). Tous droits réservés.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Prestataire de services intégrés en Afrique Centrale</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Merci pour votre message ! Nous vous recontacterons bientôt.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
